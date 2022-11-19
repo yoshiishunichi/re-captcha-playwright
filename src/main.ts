@@ -12,9 +12,9 @@ import { pageUrl } from "./data";
   if (coordinate) {
     const { x, y } = coordinate;
 
-    await page.waitForTimeout(1000);
+    await page.waitForTimeout(2000);
     await page.mouse.move(x, y);
-    await page.waitForTimeout(1000);
+    await page.waitForTimeout(2000);
     await page.mouse.click(x, y);
     await page.waitForTimeout(1000);
     await page.getByText("送信").click();
