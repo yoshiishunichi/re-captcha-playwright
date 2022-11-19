@@ -19,5 +19,4 @@ import { pageUrl } from "./data";
     await page.waitForTimeout(1000);
     await page.getByText("送信").click();
   }
-  // await browser.close();
 })();
